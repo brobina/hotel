@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
+    'staffs.apps.StaffsConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,6 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'hotelbooking/static')
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
